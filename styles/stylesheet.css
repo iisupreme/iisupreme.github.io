@@ -1,0 +1,114 @@
+.Menu_hdg h3 {
+  color :#2980b9;
+}
+
+.cupcake_img img{
+  width: 200px;
+}
+.header h1 span{
+  background-color: #c0392b;
+  
+}
+
+
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+  /*   display: inline-block; */
+     cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: auto;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 4px 0;
+    position: relative;
+    z-index: auto;
+    bottom: 125%;
+    left: auto;
+    margin-left: 10px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.popup li {
+  width: 50%;
+}
+
+.checkout {
+  height: 300px;
+	width: 400px;
+	margin: 20px auto;
+	border: 2px solid black;
+	text-align: center;
+}
+
+.checkout .btn {
+    background-color: #c0392b; /* pumpkin */
+    border: none;
+    border-radius: 12px;
+    color: black;
+    padding: 15px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+  
+}
+
+#submit_popup {
+    display: none;
+  position: absolute;
+  top: 475px;
+  left: 290px;
+    height: 100px;
+    width: 340px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 8px;
+  text-align: center;
+  font-size: 20px;
+      
+}
+.order-again {
+  margin: 20px;
+  cursor: pointer;
+}
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
